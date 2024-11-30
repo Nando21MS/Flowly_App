@@ -42,6 +42,7 @@ struct TaskListView: View {
                     }
                 }
                 .onDelete { indexSet in
+                    
                     indexSet.forEach { viewModel.deleteTask(task: viewModel.tasks[$0]) }
                 }
             }
